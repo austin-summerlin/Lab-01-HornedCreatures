@@ -1,5 +1,9 @@
 .App {
+  height: 100vh;
   display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-gap: 20px;
+  background: lightpink;
 }
 
 /* TODO: remove **/
