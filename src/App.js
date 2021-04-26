@@ -2,6 +2,8 @@
 import React, { Component } from 'react';
 import Header from './Header';
 import Footer from './Footer';
+import CreatureList from './CreatureList';
+import creatures from './Creatures';
 import './App.css';
 
 
@@ -10,11 +12,14 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header></Header>
+        <Header />
 
-        <main>List goes here</main>
+        <main>
+          <CreatureList />
+          <CreatureList creature={creatures} />
+        </main>
 
-        <Footer></Footer>
+        <Footer />
 
       </div>
     );
