@@ -15,7 +15,6 @@ class App extends Component {
         <Header />
 
         <main>
-          <CreatureList />
           <CreatureList creature={creatures} />
         </main>
 

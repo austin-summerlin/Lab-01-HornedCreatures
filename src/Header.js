@@ -5,12 +5,7 @@ class Header extends Component {
   render() {
     return (
       <header className="Header">
-        <img
-          className="image"
-          alt="horned creatures"
-          src="images.url"
-        />
-      </header>
+        Horned Creatures</header>
     );
   }
 }

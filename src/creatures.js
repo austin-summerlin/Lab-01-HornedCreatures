@@ -50,35 +50,12 @@ const creatures = [
     },
     {
         url:
-            'https://secure.img1-ag.wfcdn.com/im/17007094/resize-h800%5Ecompr-r85/3589/35892451/Baby+Rhino+Figurine.jpg',
-        title: 'Baby Rhino',
-        description: 'This is actually a figurine but it looks kinda real',
-        keyword: 'rhino',
-        horns: 2
-    },
-    {
-        url:
             'https://vignette.wikia.nocookie.net/landbeforetime/images/c/c3/Cera_infobox.png/revision/latest?cb=20180422005003',
         title: 'Cera',
         description:
             "Three horns but still, horns. And who doesn't like The Land Before Time?",
         keyword: 'triceratops',
         horns: 3
-    },
-    {
-        url:
-            'https://ae01.alicdn.com/kf/HTB18GwSQVXXXXaZaXXXq6xXFXXXh/Animal-Cosplay-Costume-Narwhal-Onesie-Mens-Womens-Cartoon-Whale-Pajamas.jpg',
-        title: 'Narwhal costume',
-        description: 'A woman wearing a blue narwhal costume',
-        keyword: 'narwhal',
-        horns: 1
-    },
-    {
-        url: 'https://www.shopmascot.com/image/cache/mascotnew/new196-800x800.jpg',
-        title: 'Rhino costume',
-        description: 'Mascots have to get their costumes somewhere',
-        keyword: 'rhino',
-        horns: 2
     },
     {
         url:
@@ -90,59 +67,11 @@ const creatures = [
     },
     {
         url:
-            'https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Markhor_Schraubenziege_Capra_falconeri_Zoo_Augsburg-02.jpg/220px-Markhor_Schraubenziege_Capra_falconeri_Zoo_Augsburg-02.jpg',
-        title: 'Markhor',
-        description:
-            'These wild goats eat snakes, then secrete a foam that locals fight over for the antivenom properties -- how cool is that?',
-        keyword: 'markhor',
-        horns: 2
-    },
-    {
-        url: 'http://www.zooborns.com/.a/6a010535647bf3970b0223c84d5959200c-800wi',
-        title: 'Baby markhor',
-        description: 'Even the babies are adorable',
-        keyword: 'markhor',
-        horns: 2
-    },
-    {
-        url:
-            'https://cdn.modernfarmer.com/wp-content/uploads/2014/08/28476658_9c97f35096_o.jpg',
-        title: 'Mouflon',
-        description: 'Those horns though',
-        keyword: 'mouflon',
-        horns: 2
-    },
-    {
-        url: 'https://cdn.modernfarmer.com/wp-content/uploads/2014/08/addax.jpg',
-        title: 'Addax',
-        description:
-            "This guy is basically extinct but survives well in captivity, so they're frequently found in zoos",
-        keyword: 'addax',
-        horns: 2
-    },
-    {
-        url:
             'https://cbsnews3.cbsistatic.com/hub/i/r/2013/03/05/5b414225-a645-11e2-a3f0-029118418759/thumbnail/620x350/2d4cf24685b45c22912e64d2004fec8d/Baby_Mouflon_Wild_Sheep.jpg',
         title: 'Baby mouflon',
         description: 'The cuteness that is a baby mouflon asleep',
         keyword: 'mouflon',
         horns: 2
-    },
-    {
-        url:
-            'https://cdn.modernfarmer.com/wp-content/uploads/2014/08/chameleon.jpg',
-        title: "Happy Jackson's Chameleon",
-        description: 'These are really common in Hawaii',
-        keyword: 'chameleon',
-        horns: 2
-    },
-    {
-        url:
-            'https://imgc.allpostersimages.com/img/print/posters/dlillc-jackson-s-chameleon_a-G-13448768-14258384.jpg',
-        title: "Serious Jackson's Chameleon",
-        description: 'This one is very serious.',
-        keyword: 'chameleon',
-        horns: 3
     },
     {
         url:
