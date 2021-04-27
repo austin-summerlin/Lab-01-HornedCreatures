@@ -18,7 +18,7 @@ class App extends Component {
 
     const searchData = creatureData
       .filter(creature => {
-        return creature.name.match(nameRegex);
+        return !nameFilter || creature.title.match(nameRegex);
       })
       .sort((a, b) => {
         if (a[sortField] < b[sortField]) return -1;
@@ -40,7 +40,7 @@ class App extends Component {
         <CreatureSearch onSearch={this.handleSearch} />
 
         <main>
-          <CreatureList creature={creatureData} />
+          <CreatureList creature={creatures} />
         </main>
 
         <Footer />
