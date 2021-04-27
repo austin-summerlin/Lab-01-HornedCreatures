@@ -4,20 +4,20 @@ import Header from './Header';
 import Footer from './Footer';
 import CreatureSearch from './CreatureSearch';
 import CreatureList from './CreatureList';
-import Creatures from './Creatures';
+import creatures from './Creatures';
 import './App.css';
 
-const creatureHorns = [...new Set(Creatures.map(c => c.horns))];
+const creatureHorns = [...new Set(creatures.map(c => c.horns))];
 
 class App extends Component {
   state = {
-    creatures: Creatures
+    creatures: creatures
   }
 
   handleSearch = ({ nameFilter, sortField, hornFilter }) => {
     const nameRegex = new RegExp(nameFilter, 'i');
 
-    const searchData = Creatures
+    const searchData = creatures
       .filter(creature => {
         return !nameFilter || creature.title.match(nameRegex);
       })
