@@ -1,14 +1,16 @@
 import React, { Component } from 'react';
 import CreatureItem from './CreatureItem';
 import './CreatureList.css';
-import Creatures from './Creatures';
+
 
 class CreatureList extends Component {
 
   render() {
+    const creatures = this.props.creature;
+
     return (
       <ul className="CreatureList">
-        {Creatures.map(creature => (
+        {creatures.map(creature => (
           <CreatureItem key={creature.title} creature={creature} />
         ))}
       </ul>
