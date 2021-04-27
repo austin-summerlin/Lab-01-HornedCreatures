@@ -1,3 +1,30 @@
 .CreatureSearch {
-  
+  background: pink;
+  padding: 10px 20px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+
+  display: flex;
+  flex-wrap: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.CreatureSearch input {
+  width: 200px;
+  height: 30px;
+  outline: 0;
+  flex-grow: 2;
+}
+
+.CreatureSearch select {
+  width: 150px;
+  height: 36px;
+  flex-grow: 1;
+}
+
+.CreatureSearch button {
+  height: 36px;
+  width: 36px;
+  cursor: pointer;
 }

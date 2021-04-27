@@ -7,6 +7,14 @@ export default class CreatureSearch extends Component {
     return (
       <form className="CreatureSearch">
 
+        <input />
+
+        <select>
+          <option value="">sort...</option>
+          <option value='name'>by name</option>
+          <option value='horns'>by horns</option>
+        </select>
+
         <button>🔍</button>
 
       </form>
