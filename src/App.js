@@ -4,7 +4,7 @@ import Header from './Header';
 import Footer from './Footer';
 import CreatureSearch from './CreatureSearch';
 import CreatureList from './CreatureList';
-import creatureData from './Creatures';
+import creatureData from './Creatures.js';
 import './App.css';
 
 const creatureHorns = [...new Set(creatureData.map(c => c.horns))];
