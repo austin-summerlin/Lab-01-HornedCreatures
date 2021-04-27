@@ -5,6 +5,7 @@ export default class CreatureSearch extends Component {
   state = {
     nameFilter: '',
     sortField: '',
+    hornFilter: ''
   }
 
   handleNameChange = ({ target }) => {
@@ -13,6 +14,10 @@ export default class CreatureSearch extends Component {
 
   handleSearchChange = ({ target }) => {
     this.setState({ sortField: target.value });
+  }
+
+  handleHornChange = ({ target }) => {
+    this.setState({ hornFilter: target.value });
   }
 
   handleSubmit = (e) => {
@@ -28,7 +33,8 @@ export default class CreatureSearch extends Component {
 
   render() {
 
-    const { nameFilter, sortField } = this.state;
+    const { nameFilter, sortField, hornFilter } = this.state;
+    const { horns } = this.props;
 
     return (
 
@@ -48,6 +54,17 @@ export default class CreatureSearch extends Component {
           <option value="">sort...</option>
           <option value='title'>by name</option>
           <option value='horns'>by horns</option>
+        </select>
+
+        <select
+          name="hornFilter"
+          value={hornFilter}
+          onChange={this.handleHornChange}
+        >
+          <option value="">All</option>
+          {horns.map(horns => (
+            <option key={horns} value={horns}>{horns}</option>
+          ))}
         </select>
 
         <button>🔍</button>

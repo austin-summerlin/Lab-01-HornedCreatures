@@ -7,18 +7,22 @@ import CreatureList from './CreatureList';
 import creatureData from './Creatures';
 import './App.css';
 
+const creatureHorns = [...new Set(creatureData.map(c => c.horns))];
 
 class App extends Component {
   state = {
     creatures: creatureData
   }
 
-  handleSearch = ({ nameFilter, sortField }) => {
+  handleSearch = ({ nameFilter, sortField, hornFilter }) => {
     const nameRegex = new RegExp(nameFilter, 'i');
 
     const searchData = creatureData
       .filter(creature => {
         return !nameFilter || creature.title.match(nameRegex);
+      })
+      .filter(creature => {
+        return !hornFilter || creature.horns === hornFilter;
       })
       .sort((a, b) => {
         if (a[sortField] < b[sortField]) return -1;
@@ -37,7 +41,7 @@ class App extends Component {
 
         <Header />
 
-        <CreatureSearch onSearch={this.handleSearch} />
+        <CreatureSearch horns={creatureHorns} onSearch={this.handleSearch} />
 
         <main>
           <CreatureList creature={creatures} />
