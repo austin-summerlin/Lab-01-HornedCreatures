@@ -14,7 +14,7 @@ class App extends Component {
     creatures: creatures
   }
 
-  handleSearch = ({ nameFilter, sortField, hornFilter }) => {
+  handleSearch = ({ nameFilter, hornFilter, sortField }) => {
     const nameRegex = new RegExp(nameFilter, 'i');
 
     const searchData = creatures

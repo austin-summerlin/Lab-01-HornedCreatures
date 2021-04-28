@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { Component } from 'react';
 import './CreatureSearch.css';
 
@@ -56,7 +57,7 @@ export default class CreatureSearch extends Component {
           <option value='horns'>by horns</option>
         </select>
 
-        <select
+        {/* <select
           name="hornFilter"
           value={hornFilter}
           onChange={this.handleHornChange}
@@ -65,7 +66,7 @@ export default class CreatureSearch extends Component {
           {horns.map(horns => (
             <option key={horns} value={horns}>{horns}</option>
           ))}
-        </select>
+        </select> */}
 
         <button>🔍</button>
 
