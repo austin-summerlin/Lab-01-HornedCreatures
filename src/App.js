@@ -4,20 +4,25 @@ import Header from './Header';
 import Footer from './Footer';
 import CreatureSearch from './CreatureSearch';
 import CreatureList from './CreatureList';
-import creatures from './creatures';
+import request from 'superagent';
 import './App.css';
 
-const creatureHorns = [...new Set(creatures.map(c => c.horns))];
+const creatureHorns = []; //[...new Set(creatures.map(c => c.horns))];
 
 class App extends Component {
   state = {
-    creatures: creatures
+    creatures: []
   }
 
-  handleSearch = ({ nameFilter, hornFilter, sortField }) => {
+  componentDidMount() {
+    this.handleSearch({});
+  }
+
+  handleSearch = async ({ nameFilter, hornFilter, sortField }) => {
     const nameRegex = new RegExp(nameFilter, 'i');
 
-    const searchData = creatures
+    const response = await request.get('https://austinheroku-lab06.herokuapp.com/api/creatures');
+    const searchData = response.body
       .filter(creature => {
         return !nameFilter || creature.title.match(nameRegex);
       })
